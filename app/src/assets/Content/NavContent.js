@@ -11,21 +11,15 @@ export const navContent = {
   buttons: [
     {
       icon: EmailIcon,
-      action: "",
+      action: () => (window.location = "mailto:spenclark@hotmail.com"),
     },
     {
       icon: GitHubIcon,
-      action: "",
-    },
-    {
-      icon: TwitterIcon,
-      action: "",
+      action: () => (location.href = "https://github.com/spenclark"),
     },
     {
       icon: LinkedInIcon,
-      action: "",
+      action: () => (location.href = "https://www.linkedin.com/in/spenclark/"),
     },
   ],
 };
-
-email, twitter, github, linkedin;

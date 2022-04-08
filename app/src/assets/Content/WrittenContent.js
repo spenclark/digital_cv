@@ -13,7 +13,7 @@ export const writtenContent = {
   document: [
     {
       title: "Business models and revenue for indie hackers",
-      id: "business-and-revenue-for-indie-hackers",
+      id: "business-models-for-indie-hackers",
       documentTitle: "Business models for indie hackers",
       description:
         "Entrepreneurs and makers are chasing recurring revenue for obvious and worthy reasons. However, the goal is not recurring revenue; the goal is to launch, make money, deliver value and improve your offering. Make the best decision for yourself and your project.",

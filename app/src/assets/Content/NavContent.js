@@ -7,14 +7,17 @@ import { Link } from "@mui/material";
 function mailTo() {
   window.location = "mailto:spenclark@hotmail.com";
 }
+
 function githubRef() {
   url = "https://github.com/spenclark";
   window.open(url, "_blank").focus();
 }
+
 function linkedRef() {
   url = "https://www.linkedin.com/in/spenclark/";
   window.open(url, "_blank").focus();
 }
+
 export const navContent = {
   timezone: "UTC−08:00",
   location: "Canada",

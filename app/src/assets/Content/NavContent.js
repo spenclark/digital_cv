@@ -4,6 +4,17 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { Link } from "@mui/material";
 
+function mailTo() {
+  window.location = "mailto:spenclark@hotmail.com";
+}
+function githubRef() {
+  url = "https://github.com/spenclark";
+  window.open(url, "_blank").focus();
+}
+function linkedRef() {
+  url = "https://www.linkedin.com/in/spenclark/";
+  window.open(url, "_blank").focus();
+}
 export const navContent = {
   timezone: "UTC−08:00",
   location: "Canada",
@@ -11,15 +22,15 @@ export const navContent = {
   buttons: [
     {
       icon: EmailIcon,
-      action: () => (window.location = "mailto:spenclark@hotmail.com"),
+      action: mailTo,
     },
     {
       icon: GitHubIcon,
-      action: () => (location.href = "https://github.com/spenclark"),
+      action: githubRef,
     },
     {
       icon: LinkedInIcon,
-      action: () => (location.href = "https://www.linkedin.com/in/spenclark/"),
+      action: linkedRef,
     },
   ],
 };

@@ -207,15 +207,18 @@ export const toolStyles = makeStyles((theme) => ({
     borderRadius: "50%",
     padding: "10px",
     background: theme.palette.primary.lightBlack,
+    color: theme.palette.primary.offWhite,
     "&:hover": {
       background: theme.palette.primary.black,
+      color: theme.palette.primary.white,
+      opacity: "0.9",
     },
     [theme.breakpoints.down("sm")]: {
       margin: "0 10px",
     },
   },
   icon: {
-    color: theme.palette.primary.white,
+    color: "inherit",
   },
 }));
 

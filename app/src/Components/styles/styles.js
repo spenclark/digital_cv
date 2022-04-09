@@ -228,23 +228,25 @@ export const writingStyles = makeStyles((theme) => ({
     fontWeight: "600",
   },
   readList: {
-    margin: "30px 0px",
+    margin: "30px 0px 10px 0px",
     display: "flex",
+    flexDirection: "row",
     flexWrap: "wrap",
+    justifyContent: "space-evenly",
   },
   mainEssayCard: {
-    width: "400px",
+    width: "100%",
     padding: "20px",
+    margin: "0 0 20px 0",
     borderRadius: "3px",
     background: theme.palette.primary.offWhite,
     border: `2px solid ${theme.palette.primary.offWhite}`,
     "&:hover": {
+      transitionDelay: "80ms",
       border: `2px solid ${theme.palette.primary.black}`,
+      background: theme.palette.primary.white,
     },
-    [theme.breakpoints.down("md")]: {
-      width: "100%",
-      margin: "20px 0",
-    },
+    [theme.breakpoints.down("md")]: {},
   },
   link: {
     color: theme.palette.primary.black,
@@ -252,37 +254,40 @@ export const writingStyles = makeStyles((theme) => ({
   },
   titleCard: {
     fontWeight: "600",
-    fontSize: "24px",
+    fontSize: "32px",
     marginBottom: "15px",
   },
   descCard: {
-    fontSize: "14px",
+    fontSize: "16px",
     marginBottom: "15px",
   },
-  contBtn: {
-    width: "140px",
-    padding: "10px 0",
-    fontSize: "16px",
-    fontWeight: "600",
-    margin: "auto",
-    borderRadius: "4px",
-    color: theme.palette.primary.white,
-    background: theme.palette.primary.black,
-  },
+
   btn: {
-    width: "180px",
-    padding: "10px 0",
+    width: "220px",
+    padding: "6px 0",
     textAlign: "center",
-    fontSize: "16px",
+    fontSize: "14px",
     fontWeight: "600",
-    margin: "auto",
     borderRadius: "4px",
     color: theme.palette.primary.white,
     background: theme.palette.primary.black,
-    [theme.breakpoints.down("md")]: {
+    [theme.breakpoints.down("sm")]: {
       width: "80%",
+      maxWidth: "180px",
+      margin: "auto",
     },
   },
 
   //   styling elements for the Read component
+}));
+
+export const projectStyles = makeStyles((theme) => ({
+  root: {},
+  title: {
+    fontSize: "52px",
+    fontWeight: "600",
+  },
+  projectList: {
+    margin: "30px 0px",
+  },
 }));

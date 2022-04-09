@@ -1,8 +1,5 @@
-import React, {useEffect, useState} from "react"
+import React from "react"
 import { baseStyles, writingStyles } from "./styles/styles"
-
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 function Writing({props}) {
     const baseClass = baseStyles()

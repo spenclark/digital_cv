@@ -288,6 +288,9 @@ export const projectStyles = makeStyles((theme) => ({
     fontWeight: "600",
   },
   projectList: {
-    margin: "30px 0px",
+    margin: "30px 0px 160px",
+    [theme.breakpoints.down("md")]: {
+      margin: "30px 0px 120px",
+    },
   },
 }));

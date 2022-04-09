@@ -45,7 +45,7 @@ export const writtenContent = {
     },
     {
       title: "Marketing Matrices for Internet Businesses",
-      id: "business-models-for-indie-hackers",
+      id: "marketing-matrices",
       documentTitle: "Business models for indie hackers",
       paragraphs: [
         "Entrepreneurs and makers are chasing recurring revenue for obvious and worthy reasons. However, the goal is not recurring revenue; the goal is to launch, make money, deliver value and improve your offering. Make the best decision for yourself and your project.",
@@ -56,7 +56,7 @@ export const writtenContent = {
     },
     {
       title: "Talent in a Global Workforce",
-      id: "business-models-for-indie-hackers",
+      id: "global-talent",
       documentTitle: "Business models for indie hackers",
       paragraphs: [
         "Entrepreneurs and makers are chasing recurring revenue for obvious and worthy reasons. However, the goal is not recurring revenue; the goal is to launch, make money, deliver value and improve your offering. Make the best decision for yourself and your project.",
@@ -66,8 +66,8 @@ export const writtenContent = {
       ],
     },
     {
-      title: "Finding Affordable and Memorable Product Names",
-      id: "business-models-for-indie-hackers",
+      title: "Good Product Names and How to Find Them",
+      id: "how-to-name",
       documentTitle: "Business models for indie hackers",
       paragraphs: [
         "Entrepreneurs and makers are chasing recurring revenue for obvious and worthy reasons. However, the goal is not recurring revenue; the goal is to launch, make money, deliver value and improve your offering. Make the best decision for yourself and your project.",
@@ -77,7 +77,7 @@ export const writtenContent = {
       ],
     },
     {
-      title: "The Decoupling of Headcount and Complexity",
+      title: "The Rise of the Micro Congolmerate",
       id: "business-models-for-indie-hackers",
       documentTitle: "Business models for indie hackers",
       paragraphs: [

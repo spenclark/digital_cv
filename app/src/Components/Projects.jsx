@@ -11,7 +11,7 @@ export default function Projects({props}) {
                 </div>
                 <div className={classes.projectList}>
 
-                <a href={props.thisRepoLink} className={baseClass.link}>
+                <a href={props.thisRepoLink} style={{fontSize: "18px"}} className={baseClass.link}>
                     See the repo for this page
                 </a>
                 </div>

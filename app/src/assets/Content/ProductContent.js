@@ -1,6 +1,6 @@
 export const productContent = {
   title: "Businesses & Projects",
-  thisRepoLink: "https://github.com/spenclark/digital_cv/app",
+  thisRepoLink: "https://github.com/spenclark/digital_cv/tree/master/app",
   mainProjects: [
     {
       name: "FlyHire",

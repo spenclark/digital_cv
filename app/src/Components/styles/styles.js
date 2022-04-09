@@ -143,9 +143,9 @@ export const toolStyles = makeStyles((theme) => ({
       width: "80%",
     },
     [theme.breakpoints.down("sm")]: {
-      width: "90%",
-      flexDirection: "column",
+      width: "100%",
       margin: "0",
+      overflowX: "scroll",
     },
   },
 
@@ -157,6 +157,9 @@ export const toolStyles = makeStyles((theme) => ({
     borderRadius: "8px",
     fontSize: "14px",
     color: theme.palette.primary.white,
+    [theme.breakpoints.down("sm")]: {
+      marginRight: "0 10px",
+    },
   },
   location: {
     display: "flex",
@@ -165,6 +168,9 @@ export const toolStyles = makeStyles((theme) => ({
     borderRadius: "1px",
     fontSize: "14px",
     color: theme.palette.primary.white,
+    [theme.breakpoints.down("sm")]: {
+      marginRight: "0 10px",
+    },
   },
   infoDiv: {
     display: "flex",
@@ -184,7 +190,7 @@ export const toolStyles = makeStyles((theme) => ({
     width: "48%",
     justifyContent: "space-evenly",
     [theme.breakpoints.down("sm")]: {
-      justifyContent: "space-evenly",
+      justifyContent: "space-apart",
       width: "100%",
     },
   },
@@ -194,6 +200,9 @@ export const toolStyles = makeStyles((theme) => ({
     background: theme.palette.primary.lightBlack,
     "&:hover": {
       background: theme.palette.primary.black,
+    },
+    [theme.breakpoints.down("sm")]: {
+      margin: "0 10px",
     },
   },
   icon: {

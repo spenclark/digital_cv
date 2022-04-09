@@ -28,8 +28,8 @@ export default function Hero({props}) {
                 <p style={{fontWeight: "600", textAlign: "center"}}>Index</p>
                 {props.map((e) => {
                     return (
-                    <a className={baseClass.link} href={e.to}>
-                        <li key={e.name} className={classes.li}>
+                    <a key={e.name} className={baseClass.link} href={e.to}>
+                        <li  className={classes.li}>
                             {e.name}
                         </li>
                     </a>

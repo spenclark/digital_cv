@@ -123,15 +123,22 @@ export const toolStyles = makeStyles((theme) => ({
     width: "60%",
     padding: "5px",
     borderRadius: "68px",
-    margin: "auto",
+    zIndex: "100",
     [theme.breakpoints.down("md")]: {
       width: "80%",
+      right: "10%",
+      left: "10%",
     },
     [theme.breakpoints.down("sm")]: {
       width: "80%",
+      padding: "8px",
       borderRadius: "12px",
+      bottom: "10%",
     },
     background: theme.palette.primary.black,
+    position: "fixed",
+    right: "20%",
+    left: "20%",
   },
   toolBar: {
     width: "70%",
@@ -158,7 +165,7 @@ export const toolStyles = makeStyles((theme) => ({
     fontSize: "14px",
     color: theme.palette.primary.white,
     [theme.breakpoints.down("sm")]: {
-      marginRight: "0 10px",
+      marginRight: "10px",
     },
   },
   location: {
@@ -169,7 +176,7 @@ export const toolStyles = makeStyles((theme) => ({
     fontSize: "14px",
     color: theme.palette.primary.white,
     [theme.breakpoints.down("sm")]: {
-      marginRight: "0 10px",
+      marginRight: "10px",
     },
   },
   infoDiv: {

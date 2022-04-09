@@ -1,6 +1,33 @@
 import React from "react"
 import { baseStyles, projectStyles } from "./styles/styles"
 
+function ProjectCard({e, i}) {
+    const classes = projectStyles()
+
+    const checkEven = (index) => {
+        if(index % 2 === 0) {
+            return true
+        } else {
+            return false
+        }
+    }
+    return (
+        <div className={checkEven(i) ? classes.evenCard : classes.oddCard }>
+            <div>
+                <img className={classes.img} src={e.screenshot} alt={`${e.name} screenshot`}/>
+            </div>
+            <div>
+                <p>
+                    {e.name}
+                </p>
+                <p>
+                    {e.desc}
+                </p>
+            </div>
+        </div>
+    )
+}
+
 export default function Projects({props}) {
     const baseClass = baseStyles()
     const classes = projectStyles()
@@ -12,12 +39,6 @@ export default function Projects({props}) {
         window.open(url, "_blank").focus();
       }
 
-    //   name: "OfferArb",
-    //   desc: "Salary and offer transparency for the finance industry.",
-    //   url: "offerarb.com",
-    //   techStack: "Python, React, Node, Redux, Postgres",
-    //   screenshot: "",
-
     return (
         <div className={baseClass.root}>
                 <div className={classes.title}>
@@ -25,7 +46,11 @@ export default function Projects({props}) {
                 </div>
                 <div className={classes.projectList}>
                     <div>
-                        
+                        {props.mainProjects.map((e, i) => {
+                            return (
+                                <ProjectCard e={e} i={i} />
+                            )
+                        })  }
                     </div>
                     <div>
                         <div className={classes.subTitle}>

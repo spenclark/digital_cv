@@ -285,7 +285,6 @@ export const writingStyles = makeStyles((theme) => ({
 }));
 
 export const projectStyles = makeStyles((theme) => ({
-  root: {},
   title: {
     fontSize: "52px",
     fontWeight: "600",
@@ -296,6 +295,8 @@ export const projectStyles = makeStyles((theme) => ({
   },
   projectList: {
     margin: "30px 0px 160px",
+    display: "flex",
+    flexDirection: "column",
     [theme.breakpoints.down("md")]: {
       margin: "30px 0px 120px",
     },
@@ -329,5 +330,29 @@ export const projectStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       margin: "0 0px 6px",
     },
+  },
+
+  //   For main projectCards
+  evenCard: {
+    width: "400px",
+    display: "flex",
+    flexDirection: "column-reverse",
+    padding: "20px",
+    margin: "0 0 30px",
+    background: theme.palette.primary.main,
+    float: "left",
+  },
+  oddCard: {
+    width: "400px",
+    display: "flex",
+    flexDirection: "column-reverse",
+    padding: "20px",
+    margin: "0 0 30px",
+    background: theme.palette.primary.main,
+    float: "right",
+  },
+  img: {
+    width: "100%",
+    borderRadius: "4px",
   },
 }));

@@ -18,7 +18,7 @@ function FloatingToolBar({props}) {
                 <div className={classes.btnDiv}>
                     {props.buttons.map((e, i) => {
                         return (
-                            <div key={i} className={classes.iconDiv} onClick={() => props.action}>
+                            <div key={i} className={classes.iconDiv} onClick={() => e.action()}>
                                 <e.icon className={classes.icon} />
                             </div>
                         )

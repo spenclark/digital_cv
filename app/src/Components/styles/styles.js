@@ -121,7 +121,7 @@ export const toolStyles = makeStyles((theme) => ({
   root: {
     maxWidth: "2400px",
     width: "60%",
-    height: "68px",
+    padding: "5px",
     borderRadius: "68px",
     margin: "auto",
     [theme.breakpoints.down("md")]: {
@@ -129,16 +129,26 @@ export const toolStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.down("sm")]: {
       width: "80%",
+      borderRadius: "12px",
     },
     background: theme.palette.primary.black,
   },
   toolBar: {
-    width: "80%",
+    width: "70%",
     height: "100%",
     display: "flex",
     margin: "auto",
     flexDirection: "row",
+    [theme.breakpoints.down("md")]: {
+      width: "80%",
+    },
+    [theme.breakpoints.down("sm")]: {
+      width: "90%",
+      flexDirection: "column",
+      margin: "0",
+    },
   },
+
   timezone: {
     background: theme.palette.primary.lightBlack,
     display: "flex",
@@ -146,7 +156,6 @@ export const toolStyles = makeStyles((theme) => ({
     padding: "10px 20px",
     borderRadius: "8px",
     fontSize: "14px",
-    margin: "0 10px",
     color: theme.palette.primary.white,
   },
   location: {
@@ -155,25 +164,33 @@ export const toolStyles = makeStyles((theme) => ({
     padding: "10px",
     borderRadius: "1px",
     fontSize: "14px",
-    margin: "0 10px",
     color: theme.palette.primary.white,
   },
   infoDiv: {
     display: "flex",
     flexDirection: "row",
-    marginRight: "60px",
     alignItems: "center",
+    width: "48%",
+    justifyContent: "space-evenly",
+    [theme.breakpoints.down("sm")]: {
+      justifyContent: "space-evenly",
+      width: "100%",
+    },
   },
   btnDiv: {
     display: "flex",
     flexDirection: "row",
     alignItems: "center",
-    margin: "0 10px",
+    width: "48%",
+    justifyContent: "space-evenly",
+    [theme.breakpoints.down("sm")]: {
+      justifyContent: "space-evenly",
+      width: "100%",
+    },
   },
   iconDiv: {
     borderRadius: "50%",
     padding: "10px",
-    margin: "0 12px",
     background: theme.palette.primary.lightBlack,
     "&:hover": {
       background: theme.palette.primary.black,

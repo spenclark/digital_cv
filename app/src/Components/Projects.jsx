@@ -34,7 +34,8 @@ export default function Projects({props}) {
                         <div className={classes.otherProjectDiv}>
                             {subList.map((e) => {
                                 return (
-                                    <div key={e.name} onClick={() => newTab(e.name)} className={classes.other}>{e.name}</div>
+                                    <a key={e.name} 
+                                    onClick={() => newTab(e.name)} className={classes.other}>{e.name}</a>
                                 )
                             })}
 

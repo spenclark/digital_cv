@@ -302,6 +302,10 @@ export const projectStyles = makeStyles((theme) => ({
     flexDirection: "row",
     flexWrap: "wrap",
     margin: "40px 0",
+    [theme.breakpoints.down("sm")]: {
+      flexDirection: "column",
+      alignItems: "flex-start",
+    },
   },
   other: {
     background: theme.palette.primary.offWhite,
@@ -314,6 +318,13 @@ export const projectStyles = makeStyles((theme) => ({
     padding: "8px 12px",
     "&:hover": {
       textDecoration: "underline",
+      color: theme.palette.primary.base,
+    },
+    [theme.breakpoints.down("md")]: {
+      margin: "0px 6px 6px 0px",
+    },
+    [theme.breakpoints.down("sm")]: {
+      margin: "0 0px 6px",
     },
   },
 }));

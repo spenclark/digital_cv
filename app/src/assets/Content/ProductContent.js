@@ -57,10 +57,10 @@ export const productContent = {
       name: "teamatlas.io",
     },
     {
-      name: "upstagedesign.ca",
+      name: "foundergrants.com",
     },
     {
-      name: "foundergrants.com",
+      name: "upstagedesign.ca",
     },
   ],
 };

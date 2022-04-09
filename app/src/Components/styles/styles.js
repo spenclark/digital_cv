@@ -287,10 +287,33 @@ export const projectStyles = makeStyles((theme) => ({
     fontSize: "52px",
     fontWeight: "600",
   },
+  subTitle: {
+    fontSize: "32px",
+    fontWeight: "600",
+  },
   projectList: {
     margin: "30px 0px 160px",
     [theme.breakpoints.down("md")]: {
       margin: "30px 0px 120px",
+    },
+  },
+  otherProjectDiv: {
+    display: "flex",
+    flexDirection: "row",
+    flexWrap: "wrap",
+    margin: "40px 0",
+  },
+  other: {
+    background: theme.palette.primary.offWhite,
+    color: theme.palette.primary.black,
+    textDecoration: "none",
+    fontSize: "12px",
+    fontWeight: "600",
+    margin: "0px 8px 8px 0px",
+    borderRadius: "4px",
+    padding: "8px 12px",
+    "&:hover": {
+      textDecoration: "underline",
     },
   },
 }));

@@ -16,10 +16,9 @@ function linkedRef() {
   window.open(url, "_blank").focus();
 }
 
-export const navContent = {
+export const toolContent = {
   timezone: "UTC−08:00",
   location: "Canada",
-  repoLink: "https://github.com/spenclark/digital_cv",
   buttons: [
     {
       icon: EmailIcon,

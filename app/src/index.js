@@ -10,8 +10,10 @@ const theme = createTheme({
   palette: {
     primary: {
       main: "#ededed",
+      white: "#ffffff",
       base: "#3177e0",
-      black: "#1C1C1C",
+      black: "#212121",
+      lightBlack: "#262626",
     },
   },
   breakpoints: {

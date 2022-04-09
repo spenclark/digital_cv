@@ -49,7 +49,7 @@ export default function Hero({props}) {
             <div className={classes.titleDiv}>
                 <h1 className={classes.name}>{props.title}</h1><p className={classes.jobTitle}>{props.jobTitle}</p>
             </div>
-            <div className={classes.aboutMe}>
+            <div className={classes.aboutMe} id="about">
                 <div className={classes.aboutHeader}>
                     <p className={classes.aboutText}>{props.aboutMe}</p>
                 </div>

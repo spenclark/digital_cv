@@ -1,12 +1,14 @@
 import React from "react"
+import {baseStyles, heroStyles} from "./styles/styles"
 
 export default function Hero({props}) {
-
+    const baseClass = baseStyles()
+    const classes = heroStyles()
     // come back and add links to aboutMe
     return (
-        <div>
-            <div>
-                <h1>{props.title}</h1><p>{props.jobTitle}</p>
+        <div className={baseClass.root}>
+            <div className={classes.titleDiv}>
+                <h1 className={classes.name}>{props.title}</h1><p className={classes.jobTitle}>{props.jobTitle}</p>
             </div>
             <div>
                 <p>{props.aboutMe}</p>

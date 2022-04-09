@@ -221,11 +221,67 @@ export const toolStyles = makeStyles((theme) => ({
 
 export const writingStyles = makeStyles((theme) => ({
   root: {
-    margin: "60px auto",
+    margin: "100px auto",
   },
   title: {
-    fontSize: "48px",
+    fontSize: "52px",
     fontWeight: "600",
+  },
+  readList: {
+    margin: "30px 0px",
+    display: "flex",
+    flexWrap: "wrap",
+  },
+  mainEssayCard: {
+    width: "400px",
+    padding: "20px",
+    borderRadius: "3px",
+    background: theme.palette.primary.offWhite,
+    border: `2px solid ${theme.palette.primary.offWhite}`,
+    "&:hover": {
+      border: `2px solid ${theme.palette.primary.black}`,
+    },
+    [theme.breakpoints.down("md")]: {
+      width: "100%",
+      margin: "20px 0",
+    },
+  },
+  link: {
+    color: theme.palette.primary.black,
+    textDecoration: "none",
+  },
+  titleCard: {
+    fontWeight: "600",
+    fontSize: "24px",
+    marginBottom: "15px",
+  },
+  descCard: {
+    fontSize: "14px",
+    marginBottom: "15px",
+  },
+  contBtn: {
+    width: "140px",
+    padding: "10px 0",
+    fontSize: "16px",
+    fontWeight: "600",
+    margin: "auto",
+    borderRadius: "4px",
+    color: theme.palette.primary.white,
+    background: theme.palette.primary.black,
+  },
+  btn: {
+    width: "180px",
+    padding: "10px 0",
+    textAlign: "center",
+    fontSize: "16px",
+    fontWeight: "600",
+    margin: "auto",
+    borderRadius: "4px",
+    color: theme.palette.primary.white,
+    background: theme.palette.primary.black,
+    [theme.breakpoints.down("md")]: {
+      width: "80%",
+    },
   },
 
   //   styling elements for the Read component

@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <Hero props={heroContent} />
-      <FloatingToolBar props={toolContent} />
+      {/* <FloatingToolBar props={toolContent} /> */}
       <Writing props={writtenContent} />
     </div>
   );

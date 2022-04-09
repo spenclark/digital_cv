@@ -128,17 +128,19 @@ export const toolStyles = makeStyles((theme) => ({
       width: "80%",
       right: "10%",
       left: "10%",
+      bottom: "40px",
     },
     [theme.breakpoints.down("sm")]: {
       width: "80%",
       padding: "8px",
       borderRadius: "12px",
-      bottom: "10%",
+      bottom: "30px",
     },
     background: theme.palette.primary.black,
     position: "fixed",
     right: "20%",
     left: "20%",
+    bottom: "50px",
   },
   toolBar: {
     width: "70%",
@@ -215,4 +217,16 @@ export const toolStyles = makeStyles((theme) => ({
   icon: {
     color: theme.palette.primary.white,
   },
+}));
+
+export const writingStyles = makeStyles((theme) => ({
+  root: {
+    margin: "60px auto",
+  },
+  title: {
+    fontSize: "48px",
+    fontWeight: "600",
+  },
+
+  //   styling elements for the Read component
 }));

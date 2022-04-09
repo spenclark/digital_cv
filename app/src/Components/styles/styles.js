@@ -12,21 +12,59 @@ export const baseStyles = makeStyles((theme) => ({
       width: "80%",
     },
   },
-  linkSpan: {},
+  link: {
+    color: "inherit",
+    textDecoration: "none",
+    "&:hover": {
+      textDecoration: "underline",
+      color: theme.palette.primary.base,
+    },
+  },
+  inlineLink: {},
 }));
 
 // Hero styles
 export const heroStyles = makeStyles((theme) => ({
+  headerDiv: {
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    margin: "40px 0px",
+    [theme.breakpoints.down("sm")]: {
+      flexDirection: "column",
+    },
+  },
+  indexList: {
+    listStyleType: "lower-roman",
+    listStylePosition: "inside",
+    fontSize: "20px",
+    padding: "20px",
+    background: "#f2f2f2",
+    borderRadius: "5px",
+    [theme.breakpoints.down("sm")]: {
+      marginTop: "20px",
+      width: "100%",
+      padding: "32px 0px",
+
+      textAlign: "center",
+    },
+  },
+  li: {
+    margin: "8px 0",
+  },
   titleDiv: {
     display: "flex",
     flexDirection: "row",
     alignItems: "center",
-    padding: "0px 0px 50px 0",
-    whiteSpace: "nowrap",
+    padding: "0px 0px 40px 0",
+    [theme.breakpoints.down("md")]: {
+      justifyContent: "space-between",
+      flexWrap: "wrap",
+    },
     [theme.breakpoints.down("sm")]: {
       flexDirection: "column",
       alignItems: "flex-start",
-      whiteSpace: "normal",
     },
   },
   name: {
@@ -34,8 +72,11 @@ export const heroStyles = makeStyles((theme) => ({
     fontWeight: "700",
     color: theme.palette.primary.black,
     marginRight: "30px",
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.down("md")]: {
       marginRight: "0",
+      marginBottom: "14px",
+    },
+    [theme.breakpoints.down("sm")]: {
       marginBottom: "14px",
     },
   },
@@ -45,21 +86,20 @@ export const heroStyles = makeStyles((theme) => ({
     padding: "6px 10px",
     fontSize: "12px",
     borderRadius: "30px",
-    background: theme.palette.primary.black,
     whiteSpace: "nowrap",
+    background: theme.palette.primary.black,
   },
   img: {
     maxWidth: "300px",
     borderRadius: "2px",
     border: "1px solid #313131",
-    margin: "40px 40px 40px 0px",
     [theme.breakpoints.down("sm")]: {
       width: "100%",
       maxWidth: "100%",
     },
   },
   aboutMe: {
-    fontSize: "20px",
+    fontSize: "22px",
   },
   aboutHeader: {
     [theme.breakpoints.down("sm")]: {
@@ -68,5 +108,8 @@ export const heroStyles = makeStyles((theme) => ({
     },
   },
   aboutText: {},
-  status: {},
+  status: {
+    margin: "30px 0",
+    fontWeight: "600",
+  },
 }));

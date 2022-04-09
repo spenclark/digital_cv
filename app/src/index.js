@@ -10,7 +10,7 @@ const theme = createTheme({
   palette: {
     primary: {
       main: "#ededed",
-      highlight: "#3177e0",
+      base: "#3177e0",
       black: "#1C1C1C",
     },
   },

@@ -78,7 +78,7 @@ export const writtenContent = {
     },
     {
       title: "The Rise of the Micro Congolmerate",
-      id: "business-models-for-indie-hackers",
+      id: "mirco-conglomerate",
       documentTitle: "Business models for indie hackers",
       paragraphs: [
         "Entrepreneurs and makers are chasing recurring revenue for obvious and worthy reasons. However, the goal is not recurring revenue; the goal is to launch, make money, deliver value and improve your offering. Make the best decision for yourself and your project.",

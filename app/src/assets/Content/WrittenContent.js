@@ -11,7 +11,7 @@ export const writtenContent = {
   title: "Writing",
   document: [
     {
-      title: "Business Models and Revenue for Indie Hackers",
+      title: "Business Models for Indie Hackers",
       id: "business-models-for-indie-hackers",
       documentTitle: "Business models for indie hackers",
       paragraphs: [

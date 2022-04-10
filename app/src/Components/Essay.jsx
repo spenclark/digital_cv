@@ -3,15 +3,26 @@ import React, {useEffect} from "react"
 
 export function Essay({props}) {
     useEffect(() => {
-        document.title = `${props.documentTitle}`
+        document.title = `${props.title}`
+        document
+            .getElementsByTagName('meta')
+            .namedItem('description')
+            .setAttribute('content', props.paraprahps[0])
     })
     return (
         <div>
             <div>
-                Go to profile page
+                <a>Go to profile page</a>
             </div>
             <div>
-                Go to profile page
+                <div>
+                    <h4>{props.title}</h4>
+                    {props.paraprahps.map((e) => {
+                        return(
+                            <p>{e}</p>
+                        )
+                    })}
+                </div>
             </div>
             
         </div>

@@ -46,10 +46,10 @@ export default function Hero({props}) {
                 <img className={classes.img} src={props.pfp} alt="Profile Picture" />
                 <IndexList props={indexList} />
             </div>
-            <div className={classes.titleDiv}>
+            <div className={classes.titleDiv} id="about">
                 <h1 className={classes.name}>{props.title}</h1><p className={classes.jobTitle}>{props.jobTitle}</p>
             </div>
-            <div className={classes.aboutMe} id="about">
+            <div className={classes.aboutMe} >
                 <div className={classes.aboutHeader}>
                     <p className={classes.aboutText}>{props.aboutMe}</p>
                 </div>

@@ -18,7 +18,7 @@ export function Essay({props}) {
                 <a href="/" className={baseClass.link}>Go to profile page</a>
             </div>
             <div style={{margin: "0px 0 40px"}}>
-                <div style={{"font-family": "'Tinos', serif", fontSize: "24px"}}>
+                <div className={baseClass.written}>
                     <h4 style={{fontWeight: "600"}}>{props.title}</h4>
                     {props.paragraphs.map((e) => {
                         return(

@@ -1,5 +1,6 @@
-import React from "react"
+import React, {useRef, useLayoutEffect, useEffect} from "react"
 import {baseStyles, heroStyles} from "./styles/styles"
+import "../App.css"
 
 const indexList = [{
     name: "About me",
@@ -16,6 +17,21 @@ export default function Hero({props}) {
     const baseClass = baseStyles()
     const classes = heroStyles()
 
+    function styleLinks() {
+       const items = document.getElementsByName('aboutLink')
+       function changeStyle(arr, color){
+            for(var i=0, len=arr.length; i<len; i++)
+            {
+                arr[i].style["color"] = color;
+                arr[i].style["text-decoration"] = "none";
+            }
+        }
+       changeStyle(items, "#3177e0");
+    }
+    
+    useEffect(() => (
+        styleLinks()
+    ))
 
     function IndexList({props}) {
         const classes = heroStyles()
@@ -37,7 +53,10 @@ export default function Hero({props}) {
 
         )
     }
-        // come back and add links to aboutMe
+
+    const aboutMeAsString = `${props.aboutMe}`
+
+
     return (
         <div className={baseClass.root}>
             <div className={classes.headerDiv}>
@@ -49,7 +68,7 @@ export default function Hero({props}) {
             </div>
             <div className={classes.aboutMe} >
                 <div className={classes.aboutHeader} >
-                    <p className={classes.aboutText} >{props.aboutMe}</p>
+                    <p className={classes.aboutText} dangerouslySetInnerHTML={{ __html: aboutMeAsString}}></p>
                 </div>
                 <div className={classes.status}>
                     <p>{props.employmentStatus}</p>

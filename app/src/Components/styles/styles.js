@@ -23,7 +23,10 @@ export const baseStyles = makeStyles((theme) => ({
       color: theme.palette.primary.base,
     },
   },
-  inlineLink: {},
+  written: {
+    fontFamily: "'Tinos', serif",
+    fontSize: "24px",
+  },
 }));
 
 // Hero styles

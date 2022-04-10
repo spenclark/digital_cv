@@ -20,13 +20,12 @@ function ProjectCard({e, i}) {
 
         const arr = string.split(",")
         const length = arr.length
-        
 
         for(i = 0; i < length; i++) {
             if(i != length - 1) {
                 arr[i]=`${arr[i]},`;
             } else {
-                arr[i]=`and ${arr[i]}`;
+                arr[i]=`and ${arr[i]}.`;
             }
         }
         return arr.join(" ")

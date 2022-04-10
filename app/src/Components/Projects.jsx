@@ -29,7 +29,7 @@ function ProjectCard({e, i}) {
                     {e.desc}
                 </p>
                 <p>
-                   
+                   <span>Technology Stack:</span>
                 </p>
             </div>
         </div>
@@ -41,13 +41,6 @@ export default function Projects({props}) {
     const classes = projectStyles()
 
     const subList = [...props.newsletters, ...props.otherProjects]
-
-    function newTab(props) {
-        const url = `https://${props}`;
-        window.open(url, "_blank").focus();
-      }
-
-    
 
     return (
         <div className={baseClass.root} id="projects">
@@ -70,7 +63,8 @@ export default function Projects({props}) {
                             {subList.map((e) => {
                                 return (
                                     <a key={e.name} 
-                                    onClick={() => newTab(e.name)} className={classes.other}>{e.name}</a>
+                                    href={`http://${e.name}`
+                                } target="_blank" className={classes.other}>{e.name}</a>
                                 )
                             })}
 

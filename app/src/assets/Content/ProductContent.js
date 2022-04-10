@@ -7,7 +7,7 @@ export const productContent = {
       desc: "Job board for Work Trials.",
       url: "flyhire.io",
       techStack: "Stripe, Remote API, React, Node, Redux, Postgres",
-      screenshot: "/project_screenshots/openoffer.png",
+      screenshot: "/project_screenshots/flyhire.png",
     },
     {
       name: "OpenOffer",

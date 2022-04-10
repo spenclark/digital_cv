@@ -28,8 +28,8 @@ function ProjectCard({e, i}) {
                 <p className={classes.prodDesc}>
                     {e.desc}
                 </p>
-                <p>
-                   <span>Technology Stack:</span>
+                <p className={classes.prodStack}>
+                   <span style={{fontWeight: "600"}}>Technology Stack:</span>
                 </p>
             </div>
         </div>

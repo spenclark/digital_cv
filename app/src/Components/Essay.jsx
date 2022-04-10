@@ -7,6 +7,12 @@ export function Essay({props}) {
     })
     return (
         <div>
+            <div>
+                Go to profile page
+            </div>
+            <div>
+                Go to profile page
+            </div>
             
         </div>
     )

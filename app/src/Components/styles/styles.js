@@ -5,8 +5,11 @@ export const baseStyles = makeStyles((theme) => ({
     maxWidth: "2400px",
     width: "60%",
     margin: "auto",
+    minWidth: "800px",
     [theme.breakpoints.down("md")]: {
       width: "80%",
+      maxWidth: "0",
+      minWidth: "80%",
     },
     [theme.breakpoints.down("sm")]: {
       width: "80%",
@@ -121,14 +124,21 @@ export const toolStyles = makeStyles((theme) => ({
   root: {
     maxWidth: "2400px",
     width: "60%",
+
     padding: "5px",
     borderRadius: "68px",
     zIndex: "100",
+    background: theme.palette.primary.black,
+    position: "fixed",
+    right: "20%",
+    left: "20%",
+    bottom: "50px",
     [theme.breakpoints.down("md")]: {
       width: "80%",
       right: "10%",
       left: "10%",
       bottom: "40px",
+      minWidth: "80%",
     },
     [theme.breakpoints.down("sm")]: {
       width: "80%",
@@ -136,11 +146,6 @@ export const toolStyles = makeStyles((theme) => ({
       borderRadius: "12px",
       bottom: "30px",
     },
-    background: theme.palette.primary.black,
-    position: "fixed",
-    right: "20%",
-    left: "20%",
-    bottom: "50px",
   },
   toolBar: {
     width: "70%",
@@ -394,7 +399,6 @@ export const projectStyles = makeStyles((theme) => ({
   prodName: {
     fontSize: "32px",
     fontWeight: "600",
-    marginBottom: "10px",
   },
   prodUrl: {
     fontSize: "12px",
@@ -405,5 +409,6 @@ export const projectStyles = makeStyles((theme) => ({
   prodDesc: {
     lineHeight: "1.1",
     fontSize: "18px",
+    margin: "10px 0",
   },
 }));

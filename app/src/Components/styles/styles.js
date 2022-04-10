@@ -2,7 +2,7 @@ import { makeStyles } from "@mui/styles";
 // base styles (used for anything generic e.i parent divs and hrefs)
 export const baseStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: "2400px",
+    maxWidth: "1600px",
     width: "60%",
     margin: "auto",
     minWidth: "800px",
@@ -122,23 +122,24 @@ export const heroStyles = makeStyles((theme) => ({
 
 export const toolStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: "2400px",
+    maxWidth: "1600px",
     width: "60%",
-
+    minWidth: "800px",
     padding: "5px",
     borderRadius: "68px",
     zIndex: "100",
     background: theme.palette.primary.black,
     position: "fixed",
-    right: "20%",
-    left: "20%",
+    left: "50%",
+    transform: "translateX(-50%)",
     bottom: "50px",
     [theme.breakpoints.down("md")]: {
       width: "80%",
       right: "10%",
       left: "10%",
       bottom: "40px",
-      minWidth: "80%",
+      transform: "translateX(0%)",
+      minWidth: "0",
     },
     [theme.breakpoints.down("sm")]: {
       width: "80%",
@@ -399,6 +400,11 @@ export const projectStyles = makeStyles((theme) => ({
   prodName: {
     fontSize: "32px",
     fontWeight: "600",
+    [theme.breakpoints.down("sm")]: {
+      lineHeight: "0.6",
+      display: "flex",
+      flexDirection: "column",
+    },
   },
   prodUrl: {
     fontSize: "12px",

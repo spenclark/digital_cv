@@ -359,6 +359,9 @@ export const projectStyles = makeStyles((theme) => ({
       margin: "0 0 40px",
       flexDirection: "column-reverse",
     },
+    [theme.breakpoints.down("sm")]: {
+      padding: "20px",
+    },
   },
   oddCard: {
     width: "100%",

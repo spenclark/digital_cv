@@ -1,8 +1,6 @@
 import React from "react"
 import {baseStyles, heroStyles} from "./styles/styles"
 
-
-
 const indexList = [{
     name: "About me",
     to: "#about"
@@ -50,8 +48,8 @@ export default function Hero({props}) {
                 <h1 className={classes.name}>{props.title}</h1><p className={classes.jobTitle}  id="unselectable" >{props.jobTitle}</p>
             </div>
             <div className={classes.aboutMe} >
-                <div className={classes.aboutHeader}>
-                    <p className={classes.aboutText}>{props.aboutMe}</p>
+                <div className={classes.aboutHeader} >
+                    <p className={classes.aboutText} >{props.aboutMe}</p>
                 </div>
                 <div className={classes.status}>
                     <p>{props.employmentStatus}</p>

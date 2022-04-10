@@ -29,7 +29,9 @@ const RenderRoutes = () => {
       <Route path="/" element={<Landing />} />
       {/* Renders Essay routes */}
       {writtenContent.document.map((e) => {
-        return <Route path={`/${e.id}`} element={<Essay props={e} />} />;
+        return (
+          <Route key={e.id} path={`/${e.id}`} element={<Essay props={e} />} />
+        );
       })}
     </Routes>
   );

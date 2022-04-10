@@ -392,6 +392,7 @@ export const projectStyles = makeStyles((theme) => ({
     width: "45%",
     display: "flex",
     flexDirection: "column",
+    justifyContent: "space-between",
     [theme.breakpoints.down("md")]: {
       width: "100%",
       margin: "0 0 30px",
@@ -414,7 +415,7 @@ export const projectStyles = makeStyles((theme) => ({
   },
   prodDesc: {
     lineHeight: "1.1",
-    fontSize: "18px",
+    fontSize: "20px",
     margin: "10px 0",
   },
 }));

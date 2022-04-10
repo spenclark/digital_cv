@@ -1,4 +1,3 @@
-import { useEffect } from "react"
 import React, {useEffect} from "react"
 import { baseStyles, writingStyles } from "./styles/styles"
 
@@ -8,21 +7,22 @@ export function Essay({props}) {
         document
             .getElementsByTagName('meta')
             .namedItem('description')
-            .setAttribute('content', props.paraprahps[0])
+            .setAttribute('content', props.paragraphs[0])
     })
+    
     const baseClass = baseStyles()
-    const classes = writingStyles()
+
     return (
         <div className={baseClass.root}>
             <div style={{fontSize: "24px", margin: "40px 0"}}>
                 <a href="/" className={baseClass.link}>Go to profile page</a>
             </div>
-            <div style={{margin: "0px 0 40px", padding: "10px"}}>
-                <div style={{fontFamily: "'Tinos', serif", fontSize: "14px"}}>
+            <div style={{margin: "0px 0 40px"}}>
+                <div style={{"font-family": "'Tinos', serif", fontSize: "24px"}}>
                     <h4 style={{fontWeight: "600"}}>{props.title}</h4>
-                    {props.paraprahps.map((e) => {
+                    {props.paragraphs.map((e) => {
                         return(
-                            <p style={{margin: "12px 0"}}>{e}</p>
+                            <p style={{margin: "12px 0", fontSize: "18px", lineHeight: "1.2"}}>{e}</p>
                         )
                     })}
                 </div>

@@ -44,7 +44,7 @@ export const writtenContent = {
       ],
     },
     {
-      title: "Marketing Matrices for Internet Businesses",
+      title: "My Matrices for Marketing  Internet Businesses",
       id: "marketing-matrices",
       documentTitle: "Business models for indie hackers",
       paragraphs: [

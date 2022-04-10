@@ -248,6 +248,8 @@ export const writingStyles = makeStyles((theme) => ({
       transitionDelay: "80ms",
       border: `2px solid ${theme.palette.primary.black}`,
       background: theme.palette.primary.white,
+      boxShadow:
+        "0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08)",
     },
     [theme.breakpoints.down("md")]: {},
   },
@@ -334,25 +336,74 @@ export const projectStyles = makeStyles((theme) => ({
 
   //   For main projectCards
   evenCard: {
-    width: "400px",
+    width: "100%",
+    borderRadius: "4px",
+    maxWidth: "100%",
+    margin: "20px 0 80px",
     display: "flex",
-    flexDirection: "column-reverse",
-    padding: "20px",
-    margin: "0 0 30px",
+    flexDirection: "row-reverse",
+    justifyContent: "space-between",
+    padding: "30px",
     background: theme.palette.primary.main,
-    float: "left",
+    [theme.breakpoints.down("md")]: {
+      padding: "30px",
+      margin: "0 0 40px",
+      flexDirection: "column-reverse",
+    },
   },
   oddCard: {
-    width: "400px",
+    width: "100%",
+    borderRadius: "4px",
+    maxWidth: "100%",
+    margin: "0 0 80px",
     display: "flex",
-    flexDirection: "column-reverse",
-    padding: "20px",
-    margin: "0 0 30px",
+    justifyContent: "flex-end",
+    flexDirection: "reverse",
+    justifyContent: "space-between",
+    padding: "30px",
     background: theme.palette.primary.main,
-    float: "right",
+    [theme.breakpoints.down("md")]: {
+      padding: "30px",
+      margin: "0 0 40px",
+      flexDirection: "column-reverse",
+    },
+    [theme.breakpoints.down("sm")]: {
+      padding: "20px",
+    },
   },
   img: {
     width: "100%",
     borderRadius: "4px",
+    border: "1px solid grey",
+  },
+  contentDiv: {
+    width: "49%",
+    [theme.breakpoints.down("md")]: {
+      width: "100%",
+    },
+  },
+  textDiv: {
+    width: "45%",
+    display: "flex",
+    flexDirection: "column",
+    [theme.breakpoints.down("md")]: {
+      width: "100%",
+      margin: "0 0 30px",
+    },
+  },
+  prodName: {
+    fontSize: "32px",
+    fontWeight: "600",
+    marginBottom: "10px",
+  },
+  prodUrl: {
+    fontSize: "12px",
+    fontWeight: "500",
+    marginBottom: "10px",
+    color: theme.palette.primary.base,
+  },
+  prodDesc: {
+    lineHeight: "1.1",
+    fontSize: "18px",
   },
 }));

@@ -4,14 +4,14 @@ export const productContent = {
   mainProjects: [
     {
       name: "FlyHire",
-      desc: "Job board for work trials.",
+      desc: "Job board for Work Trials.",
       url: "flyhire.io",
-      techStack: "React, Node, Redux, Postgres",
+      techStack: "Stripe, Remote API, React, Node, Redux, Postgres",
       screenshot: "/project_screenshots/openoffer.png",
     },
     {
       name: "OpenOffer",
-      desc: "Rejected Candidate Refferal",
+      desc: "Matchmaking job search for rejected Candidates. ",
       url: "openoffer.io",
       techStack: "React, Node, Redux, Postgres",
       screenshot: "/project_screenshots/openoffer.png",
@@ -31,7 +31,7 @@ export const productContent = {
       screenshot: "/project_screenshots/openoffer.png",
     },
     {
-      name: "ClientSheet (waitlist)",
+      name: "ClientSheet",
       desc: "Communication app between agencies and clients.",
       url: "clientsheet.co",
       techStack: "Websocket, React, Node, Redux, Postgres",

@@ -11,17 +11,25 @@ function ProjectCard({e, i}) {
             return false
         }
     }
+
+    const renderList = (arr) => {
+        
+    }
     return (
+    
         <div className={checkEven(i) ? classes.evenCard : classes.oddCard }>
-            <div>
+            <div className={classes.contentDiv}>
                 <img className={classes.img} src={e.screenshot} alt={`${e.name} screenshot`}/>
             </div>
-            <div>
-                <p>
-                    {e.name}
+            <div className={classes.textDiv}>
+                <p className={classes.prodName}>
+                    {e.name} <span><a className={classes.prodUrl}href={`https://${e.url}`} target="_blank">{`https://${e.url}`}</a></span>
+                </p>
+                <p className={classes.prodDesc}>
+                    {e.desc}
                 </p>
                 <p>
-                    {e.desc}
+                   
                 </p>
             </div>
         </div>
@@ -39,8 +47,10 @@ export default function Projects({props}) {
         window.open(url, "_blank").focus();
       }
 
+    
+
     return (
-        <div className={baseClass.root}>
+        <div className={baseClass.root} id="projects">
                 <div className={classes.title}>
                     {props.title}
                 </div>

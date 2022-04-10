@@ -43,11 +43,11 @@ export default function Hero({props}) {
     return (
         <div className={baseClass.root}>
             <div className={classes.headerDiv}>
-                <img className={classes.img} src={props.pfp} alt="Profile Picture" />
+                <img className={classes.img} src={props.pfp} id="unselectable" alt="Profile Picture" />
                 <IndexList props={indexList} />
             </div>
             <div className={classes.titleDiv} id="about">
-                <h1 className={classes.name}>{props.title}</h1><p className={classes.jobTitle}>{props.jobTitle}</p>
+                <h1 className={classes.name}>{props.title}</h1><p className={classes.jobTitle}  id="unselectable" >{props.jobTitle}</p>
             </div>
             <div className={classes.aboutMe} >
                 <div className={classes.aboutHeader}>

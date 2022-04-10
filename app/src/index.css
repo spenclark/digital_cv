@@ -8,3 +8,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+::-moz-selection { /* Code for Firefox */
+  color: black;
+  background: #F5F543;
+}
+
+::selection {
+  color: black;
+  background: #F5F543;
+}
+
+#unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

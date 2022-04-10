@@ -1,9 +1,10 @@
 import {toolStyles} from "./styles/styles"
+
 function FloatingToolBar({props}) {
     const classes = toolStyles()
 
     return (
-        <div className={classes.root}>
+        <div className={classes.root} id="scrollbar">
             <div className={classes.toolBar}>
                 <div className={classes.infoDiv}>
                     <div className={classes.timezone}>

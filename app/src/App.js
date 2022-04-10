@@ -15,7 +15,6 @@ function Landing() {
       <FloatingToolBar props={toolContent} />
       <Writing props={writtenContent} />
       <Projects props={productContent} />
-      
     </>
   );
 }

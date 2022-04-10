@@ -1,5 +1,7 @@
 import { useEffect } from "react"
 import React, {useEffect} from "react"
+import { baseStyles } from "./styles/styles"
+import { ClassNames } from "@emotion/react"
 
 export function Essay({props}) {
     useEffect(() => {
@@ -9,10 +11,11 @@ export function Essay({props}) {
             .namedItem('description')
             .setAttribute('content', props.paraprahps[0])
     })
+    const baseClass = baseStyles()
     return (
-        <div>
-            <div>
-                <a>Go to profile page</a>
+        <div className={baseClass.root}>
+            <div style={{fontSize: "24px", margin: "40px 0"}}>
+                <a href="/" className={baseClass.link}>Go to profile page</a>
             </div>
             <div>
                 <div>

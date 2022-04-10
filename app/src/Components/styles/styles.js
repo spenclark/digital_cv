@@ -287,6 +287,9 @@ export const writingStyles = makeStyles((theme) => ({
       maxWidth: "180px",
       margin: "auto",
     },
+    "&:hover": {
+      opacity: "0.9",
+    },
   },
 
   //   styling elements for the Read component
@@ -382,6 +385,7 @@ export const projectStyles = makeStyles((theme) => ({
     borderRadius: "4px",
     border: "1px solid grey",
   },
+  imgCover: {},
   contentDiv: {
     width: "49%",
     [theme.breakpoints.down("md")]: {

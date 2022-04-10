@@ -66,7 +66,7 @@ export const writtenContent = {
       ],
     },
     {
-      title: "Good Product Names and How to Find Them",
+      title: "Product Names and How to Find Them",
       id: "how-to-name",
       documentTitle: "Business models for indie hackers",
       paragraphs: [

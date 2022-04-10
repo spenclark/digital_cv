@@ -4,14 +4,14 @@ export const productContent = {
   mainProjects: [
     {
       name: "FlyHire",
-      desc: "Job board for Work Trials.",
+      desc: "Job board for companies who want to offer work trials.",
       url: "flyhire.io",
       techStack: "Stripe, Remote API, React, Node, Redux, Postgres",
       screenshot: "/project_screenshots/flyhire.png",
     },
     {
       name: "OpenOffer",
-      desc: "Matchmaking job search for rejected Candidates. ",
+      desc: "Matchmaking job search for rejected Candidates",
       url: "openoffer.io",
       techStack: "React, Node, Redux, Postgres",
       screenshot: "/project_screenshots/openoffer.png",

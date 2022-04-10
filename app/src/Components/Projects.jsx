@@ -1,8 +1,9 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import { baseStyles, projectStyles } from "./styles/styles"
 
 function ProjectCard({e, i}) {
     const classes = projectStyles()
+    const [focus, setFocus] = useState()
 
     const checkEven = (index) => {
         if(index % 2 === 0) {
@@ -30,11 +31,17 @@ function ProjectCard({e, i}) {
         }
         return arr.join(" ")
     }
+
+
+
     return (
     
         <div className={checkEven(i) ? classes.evenCard : classes.oddCard }>
+           
             <div className={classes.contentDiv}>
-                <img className={classes.img} src={e.screenshot} alt={`${e.name} screenshot`}/>
+                {focus === i ? null 
+                : <img className={classes.img} src={e.screenshot} alt={`${e.name} screenshot`}/>}
+               
             </div>
             <div className={classes.textDiv}>
                 <div>
@@ -70,7 +77,7 @@ export default function Projects({props}) {
                     <div>
                         {props.mainProjects.map((e, i) => {
                             return (
-                                <ProjectCard e={e} i={i} />
+                                <ProjectCard key={i} e={e} i={i} />
                             )
                         })  }
                     </div>

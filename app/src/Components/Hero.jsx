@@ -16,17 +16,18 @@ const indexList = [{
 export default function Hero({props}) {
     const baseClass = baseStyles()
     const classes = heroStyles()
+    const aboutMeAsString = `${props.aboutMe}`
 
     function styleLinks() {
        const items = document.getElementsByName('aboutLink')
-       function changeStyle(arr, color){
-            for(var i=0, len=arr.length; i<len; i++)
-            {
+       function changeStyle(arr){
+           var color = "#3177e0"
+            for(var i=0, len=arr.length; i<len; i++) {
                 arr[i].style["color"] = color;
                 arr[i].style["text-decoration"] = "none";
             }
         }
-       changeStyle(items, "#3177e0");
+       changeStyle(items);
     }
     
     useEffect(() => (
@@ -53,9 +54,6 @@ export default function Hero({props}) {
 
         )
     }
-
-    const aboutMeAsString = `${props.aboutMe}`
-
 
     return (
         <div className={baseClass.root}>

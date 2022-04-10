@@ -32,7 +32,7 @@ export const productContent = {
     },
     {
       name: "ClientSheet",
-      desc: "Communication app between agencies and clients.",
+      desc: "Communication app between agencies and clients. Currently in early beta.",
       url: "clientsheet.co",
       techStack: "Websocket, React, Node, Redux, Postgres",
       screenshot: "/project_screenshots/openoffer.png",

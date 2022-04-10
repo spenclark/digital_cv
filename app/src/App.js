@@ -1,5 +1,8 @@
 import "./App.css";
 import Hero from "./Components/Hero";
+
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 import { heroContent } from "./assets/Content/HeroContent";
 import FloatingToolBar from "./Components/FloatingToolBar";
 import { toolContent } from "./assets/Content/ToolContent";
@@ -22,7 +25,11 @@ function Landing() {
 function App() {
   return (
     <div className="App">
-      <Landing />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Landing />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

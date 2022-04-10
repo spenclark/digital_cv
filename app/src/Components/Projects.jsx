@@ -12,8 +12,23 @@ function ProjectCard({e, i}) {
         }
     }
 
-    const renderList = (arr) => {
+    const renderList = (string) => {
+        // Print each item in array unless its the last so we can have proper punctation
+
+        // this is overly complicated but is here to show js skills
+
+        const arr = string.split(",")
+        const length = arr.length
         
+
+        for(i = 0; i < length; i++) {
+            if(i != length - 1) {
+                arr[i]=`${arr[i]},`;
+            } else {
+                arr[i]=`and ${arr[i]}`;
+            }
+        }
+        return arr.join(" ")
     }
     return (
     
@@ -29,7 +44,7 @@ function ProjectCard({e, i}) {
                     {e.desc}
                 </p>
                 <p className={classes.prodStack}>
-                   <span style={{fontWeight: "600"}}>Technology Stack:</span>
+                   <span style={{fontWeight: "600"}}>Technology Stack:</span> {renderList(e.techStack)}
                 </p>
             </div>
         </div>

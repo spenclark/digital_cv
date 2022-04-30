@@ -25,6 +25,7 @@ export const baseStyles = makeStyles((theme) => ({
   },
   written: {
     fontFamily: "'Tinos', serif",
+    lineHeight: "1.2",
     fontSize: "24px",
   },
 }));
@@ -269,7 +270,7 @@ export const writingStyles = makeStyles((theme) => ({
   titleCard: {
     fontWeight: "600",
     fontSize: "32px",
-    marginBottom: "15px",
+    marginBottom: "10px",
   },
   descCard: {
     fontSize: "16px",

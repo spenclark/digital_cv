@@ -34,28 +34,28 @@ export const writtenContent = {
         "Almost anything you can sell in a marketplace or D2C can start as a newsletter. It might be one of the fastest and most friendly ways to validate an idea. The market does not need another opinion or hot take -- the market needs goods and services. I would caveat by saying that information is super valuable, but it's much harder to stand out from the crowd. You are much more likely to succeed in selling something people already want such as domain names or introductions to candidates.",
       ],
     },
-    {
-      title: "Learning loops",
-      id: "learning",
-      documentTitle: "Passive learning loops",
-      paragraphs: [
-        "Entrepreneurs and makers are chasing recurring revenue for obvious and worthy reasons. However, the goal is not recurring revenue; the goal is to launch, make money, deliver value and improve your offering. Make the best decision for yourself and your project.",
-        "Humans can start working on complex problems fast, but building software that can do the same task uses expensive resources critical to early-stage projects. Humans don't need to write a bunch of code before being useful. We come pre-installed with tools to thrive in complex environments -- working adaptively with our hands and minds. Markets are kind to this because we have an easier time trusting people than machines. Trust is the best moat and basis of expansion; spending months building products might be slowing you down.",
-        "There is a middle ground. DesignJoy, for example, is a $1,500,00 ARR design agency that charges monthly fees for its services. This model solves the problem that cripples so many businesses: cash flow. DesignJoy also shares the distribution benefits that a digital product enjoys. They could use the agency profits could go into the software business by launching a product to an already established list of users. Clipt.co executed a similar transition; I plan to do the same with many projects in my portfolio.",
-        "Non-recurring business models are not a death sentence. It gives the option to test your ideas in the market faster while avoiding the costs and pitfalls that many suffer. Moreover, you can always convert clients and users into subscriptions later. Many people would be better off rethinking recurring revenue beyond the narrowly defined model that dominates thinking. Act accordingly.",
-      ],
-    },
-    {
-      title: "Marketing for Side Projects",
-      id: "marketing-matrices",
-      documentTitle: "Marketing for Side Projects",
-      paragraphs: [
-        "Entrepreneurs and makers are chasing recurring revenue for obvious and worthy reasons. However, the goal is not recurring revenue; the goal is to launch, make money, deliver value and improve your offering. Make the best decision for yourself and your project.",
-        "Humans can start working on complex problems fast, but building software that can do the same task uses expensive resources critical to early-stage projects. Humans don't need to write a bunch of code before being useful. We come pre-installed with tools to thrive in complex environments -- working adaptively with our hands and minds. Markets are kind to this because we have an easier time trusting people than machines. Trust is the best moat and basis of expansion; spending months building products might be slowing you down.",
-        "There is a middle ground. DesignJoy, for example, is a $1,500,00 ARR design agency that charges monthly fees for its services. This model solves the problem that cripples so many businesses: cash flow. DesignJoy also shares the distribution benefits that a digital product enjoys. They could use the agency profits could go into the software business by launching a product to an already established list of users. Clipt.co executed a similar transition; I plan to do the same with many projects in my portfolio.",
-        "Non-recurring business models are not a death sentence. It gives the option to test your ideas in the market faster while avoiding the costs and pitfalls that many suffer. Moreover, you can always convert clients and users into subscriptions later. Many people would be better off rethinking recurring revenue beyond the narrowly defined model that dominates thinking. Act accordingly.",
-      ],
-    },
+    // {
+    //   title: "Learning loops",
+    //   id: "learning",
+    //   documentTitle: "Passive learning loops",
+    //   paragraphs: [
+    //     "Entrepreneurs and makers are chasing recurring revenue for obvious and worthy reasons. However, the goal is not recurring revenue; the goal is to launch, make money, deliver value and improve your offering. Make the best decision for yourself and your project.",
+    //     "Humans can start working on complex problems fast, but building software that can do the same task uses expensive resources critical to early-stage projects. Humans don't need to write a bunch of code before being useful. We come pre-installed with tools to thrive in complex environments -- working adaptively with our hands and minds. Markets are kind to this because we have an easier time trusting people than machines. Trust is the best moat and basis of expansion; spending months building products might be slowing you down.",
+    //     "There is a middle ground. DesignJoy, for example, is a $1,500,00 ARR design agency that charges monthly fees for its services. This model solves the problem that cripples so many businesses: cash flow. DesignJoy also shares the distribution benefits that a digital product enjoys. They could use the agency profits could go into the software business by launching a product to an already established list of users. Clipt.co executed a similar transition; I plan to do the same with many projects in my portfolio.",
+    //     "Non-recurring business models are not a death sentence. It gives the option to test your ideas in the market faster while avoiding the costs and pitfalls that many suffer. Moreover, you can always convert clients and users into subscriptions later. Many people would be better off rethinking recurring revenue beyond the narrowly defined model that dominates thinking. Act accordingly.",
+    //   ],
+    // },
+    // {
+    //   title: "Marketing for Side Projects",
+    //   id: "marketing-matrices",
+    //   documentTitle: "Marketing for Side Projects",
+    //   paragraphs: [
+    //     "Entrepreneurs and makers are chasing recurring revenue for obvious and worthy reasons. However, the goal is not recurring revenue; the goal is to launch, make money, deliver value and improve your offering. Make the best decision for yourself and your project.",
+    //     "Humans can start working on complex problems fast, but building software that can do the same task uses expensive resources critical to early-stage projects. Humans don't need to write a bunch of code before being useful. We come pre-installed with tools to thrive in complex environments -- working adaptively with our hands and minds. Markets are kind to this because we have an easier time trusting people than machines. Trust is the best moat and basis of expansion; spending months building products might be slowing you down.",
+    //     "There is a middle ground. DesignJoy, for example, is a $1,500,00 ARR design agency that charges monthly fees for its services. This model solves the problem that cripples so many businesses: cash flow. DesignJoy also shares the distribution benefits that a digital product enjoys. They could use the agency profits could go into the software business by launching a product to an already established list of users. Clipt.co executed a similar transition; I plan to do the same with many projects in my portfolio.",
+    //     "Non-recurring business models are not a death sentence. It gives the option to test your ideas in the market faster while avoiding the costs and pitfalls that many suffer. Moreover, you can always convert clients and users into subscriptions later. Many people would be better off rethinking recurring revenue beyond the narrowly defined model that dominates thinking. Act accordingly.",
+    //   ],
+    // },
     {
       title: "Talent in the 21st century",
       id: "global-talent",
@@ -83,16 +83,16 @@ export const writtenContent = {
         "I argue for a median approach. All of my projects get named when I mash two words describing my project together. This gives you a lot of options when naming a project: they tend to be rhythmic, memorable, have two syllables and communicate value. You will be pleasantly surprised to find that not many other people have thought of the same name. DoorDash over Uber. PayPal over Western Union. This method has delivered me names that satisfy most of the benefits across the spectrum without the downsides.",
       ],
     },
-    {
-      title: "The Rise of the Micro Congolmerate",
-      id: "mirco-conglomerate",
-      documentTitle: "Business models for indie hackers",
-      paragraphs: [
-        "Entrepreneurs and makers are chasing recurring revenue for obvious and worthy reasons. However, the goal is not recurring revenue; the goal is to launch, make money, deliver value and improve your offering. Make the best decision for yourself and your project.",
-        "Humans can start working on complex problems fast, but building software that can do the same task uses expensive resources critical to early-stage projects. Humans don't need to write a bunch of code before being useful. We come pre-installed with tools to thrive in complex environments -- working adaptively with our hands and minds. Markets are kind to this because we have an easier time trusting people than machines. Trust is the best moat and basis of expansion; spending months building products might be slowing you down.",
-        "There is a middle ground. DesignJoy, for example, is a $1,500,00 ARR design agency that charges monthly fees for its services. This model solves the problem that cripples so many businesses: cash flow. DesignJoy also shares the distribution benefits that a digital product enjoys. They could use the agency profits could go into the software business by launching a product to an already established list of users. Clipt.co executed a similar transition; I plan to do the same with many projects in my portfolio.",
-        "Non-recurring business models are not a death sentence. It gives the option to test your ideas in the market faster while avoiding the costs and pitfalls that many suffer. Moreover, you can always convert clients and users into subscriptions later. Many people would be better off rethinking recurring revenue beyond the narrowly defined model that dominates thinking. Act accordingly.",
-      ],
-    },
+    // {
+    //   title: "The Rise of the Micro Congolmerate",
+    //   id: "mirco-conglomerate",
+    //   documentTitle: "Business models for indie hackers",
+    //   paragraphs: [
+    //     "Entrepreneurs and makers are chasing recurring revenue for obvious and worthy reasons. However, the goal is not recurring revenue; the goal is to launch, make money, deliver value and improve your offering. Make the best decision for yourself and your project.",
+    //     "Humans can start working on complex problems fast, but building software that can do the same task uses expensive resources critical to early-stage projects. Humans don't need to write a bunch of code before being useful. We come pre-installed with tools to thrive in complex environments -- working adaptively with our hands and minds. Markets are kind to this because we have an easier time trusting people than machines. Trust is the best moat and basis of expansion; spending months building products might be slowing you down.",
+    //     "There is a middle ground. DesignJoy, for example, is a $1,500,00 ARR design agency that charges monthly fees for its services. This model solves the problem that cripples so many businesses: cash flow. DesignJoy also shares the distribution benefits that a digital product enjoys. They could use the agency profits could go into the software business by launching a product to an already established list of users. Clipt.co executed a similar transition; I plan to do the same with many projects in my portfolio.",
+    //     "Non-recurring business models are not a death sentence. It gives the option to test your ideas in the market faster while avoiding the costs and pitfalls that many suffer. Moreover, you can always convert clients and users into subscriptions later. Many people would be better off rethinking recurring revenue beyond the narrowly defined model that dominates thinking. Act accordingly.",
+    //   ],
+    // },
   ],
 };

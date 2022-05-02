@@ -16,13 +16,13 @@ export const productContent = {
       techStack: "SendGrid, React, Node, Redux, Postgres",
       screenshot: "/project_screenshots/openoffer.png",
     },
-    {
-      name: "PayRemote",
-      desc: "Simple payment client for remote workers and contractors.",
-      url: "payremote.io",
-      techStack: "Wise API, React, Node, Redux, Postgres",
-      screenshot: "/project_screenshots/openoffer.png",
-    },
+    // {
+    //   name: "PayRemote",
+    //   desc: "Simple payment client for remote workers and contractors.",
+    //   url: "payremote.io",
+    //   techStack: "Wise API, React, Node, Redux, Postgres",
+    //   screenshot: "/project_screenshots/openoffer.png",
+    // },
     // {
     //   name: "OfferArb",
     //   desc: "Salary and offer transparency for the finance industry.",
@@ -39,9 +39,9 @@ export const productContent = {
     // },
   ],
   newsletters: [
-    {
-      name: "canadianengineers.ca",
-    },
+    // {
+    //   name: "canadianengineers.ca",
+    // },
     {
       name: "seniortechtalent.com",
     },

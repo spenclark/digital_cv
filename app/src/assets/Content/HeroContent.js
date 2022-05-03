@@ -3,7 +3,7 @@ export const heroContent = {
   jobTitle: "Full-Stack Engineer",
   pfp: "/pfp.jpg",
   // Html in this string will be rendered, must have name="aboutLinks" to be given styling on the DOM
-  aboutMe: `My broad work interest is applying engineering to solve business and product problems. I think engineers can take deliverables from start to finish, and hiring practices broadly are missing massive talent pools. I write about things to help engineers make better decisions for themselves and their projects. I have a group of side projectsprimarily in the recruiting and HR industry, which has taught me a lot about time management business, design, and making real-world products.`,
+  aboutMe: `My broad work interest is applying engineering to solve business and product problems. I think engineers can take deliverables from start to finish, and hiring practices broadly are missing massive talent pools. I write about things to help engineers make better decisions for themselves and their projects. I have a group of side projects primarily in the recruiting and HR industry, which has taught me a lot about time management business, design, and making real-world products.`,
   employmentStatus: "Open to full-time and contract roles.",
 };
 
